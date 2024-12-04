@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Hasher</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Password Hasher</h1>
+    </div>
+    <div class="container">
+        <form action="/hash_password" method="POST">
+            <input type="password" name="password" placeholder="Enter password...">
+            <button type="submit">Hash Password</button>
+        </form>
+    </div>
+    {% if hashed_password %}
+    <div class="container">
+        <p class="result"><strong>Hashed Password:</strong> {{ hashed_password }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>

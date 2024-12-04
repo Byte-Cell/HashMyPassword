@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    color: #ffffff;
+    margin: 10px auto;
+}
+
+.container input[type="password"],
+.container button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+}
+
+.result {
+    width: 100%;
+    max-width: 1000px; 
+    margin: 0 auto;
+    font-size: 3vw; 
+    text-align: center;
+    box-sizing: border-box; 
+    overflow-wrap: break-word;
+}
